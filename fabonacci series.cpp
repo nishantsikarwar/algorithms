@@ -1,23 +1,29 @@
 #include <iostream>
-#include <cmath>
+#define m 1000000007
 using namespace std;
- inline int F(int n )
+//long long int f=0;
+inline long long int f(int n)
 {
-	if (n==0||n==1)
-	return n;
-	else return F(n-1)+F(n-2);
+
+if (n==0||n==1)
+return n;
+ 
+	else
+	{
+
+	return (f((n+1)/2)*f(n/2)+f((n-1)/2)*f((n-2)/2))
 	
+	;
+	
+		
 }
 
+}
 int main()
 {
-	
-int i;
-cin>>i;
-cout <<F(i)*F(i);
-//long long double s=0;
-//for (int i=1;i<30;i++)
-//s+=F(i)*F(i);	
-//cout <<s;
-return 0;	
+	int n;
+	cin>>n;
+	cout <<f(n);
+	return 0;
 }
+

@@ -1,10 +1,13 @@
 #include <iostream>
 #include <cmath>
+#define m 100086841
 using namespace std;
-main()
+
+int main()
 {
-	 int b,e,s=0;
-	 long long  int r=1,m=1000000007,mod=1;
+	long long int b,e;
+	int s=0;
+	 long long  int r=1,mod=1;
 	cout <<"enter the base"<<endl;
 	cin>>b;
 	cout <<"enter the exponent"<<endl;
@@ -26,6 +29,5 @@ main()
 		}
 	}
 	cout << " modulo is "<< mod;
-	
-	
+	return 0;
 }
